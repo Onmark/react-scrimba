@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: rgb(50, 55, 60);
+    color: white;
+}
+
+.card {
+    width: 320px;
+    margin: 40px 40px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    background: rgb(40, 42, 45);
+}
+
+.card header {
+    text-align: center;
+}
+
+.card header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.card header h2 {
+    font-size: 0.8rem;
+    color: goldenrod;
+    margin-top: 0px;
+}
+
+.card header nav {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn {
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 35px;
+    width: 100px;
+    gap: 6px;
+
+    padding: 0px 14px;
+    border-radius: 6px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-email {
+    background: white;
+    color: #111;
+}
+
+.btn-linkedin {
+    background: deepskyblue;
+    color: white;
+}
+
+.btn-linkedin span {
+    background: white;
+    border-radius: 4px;
+    ;
+    color: deepskyblue;
+    padding: 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-about {
+    font-size: 0.7rem;
+    padding: 2px 20px;
+    line-height: 1.5;
+}
+
+.card-about h1 {
+    margin-bottom: 0px;
+    font-size: 1.0rem;
+}
+
+.card-interests {
+    font-size: 0.7rem;
+    padding: 2px 20px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.card-interests h1 {
+    margin-bottom: 0px;
+    font-size: 1.0rem;
+}
+
+.footer {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: white;
+}
