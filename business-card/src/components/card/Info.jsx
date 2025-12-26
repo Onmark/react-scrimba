@@ -1,15 +1,19 @@
 import Navbar from "./Info/Navbar"
 
-export default function Info() {
+export default function Info({person}) {
 
     return (
-        <header>
-            <img className="header-nav-img" src="/src/images/mememe.png" alt="Profile"/>
+    <header>
+      <img
+        className="header-nav-img"
+        src={person.imageUrl}
+        alt={person.name}
+      />
 
-            <h1>Ondrej Markovic</h1>
-            <h2>Solution Engineer</h2>
-            <Navbar />
+      <h1>{person.name}</h1>
+      <h2>{person.title}</h2>
 
-        </header>
+      <Navbar />
+    </header>
     );
 }

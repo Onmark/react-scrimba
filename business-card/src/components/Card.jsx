@@ -6,13 +6,15 @@ import Footer from "./card/Footer"
 
 
 
-export default function Card(){
-    return(
-            <article className='card'>
-                <Info />
-                <About />
-                <Interests />
-                <Footer />
-            </article>
-    )
+export default function Card({ person }) {
+      return (
+        <div className="card">
+          <Info person={person} />
+              <div className="card-content">
+                  <About about={person.about} />
+                  <Interests interests={person.interests} />
+              </div>
+          <Footer />
+        </div>
+      )
 }

@@ -1,10 +1,8 @@
-
-export default function Interests() {
-
-    return (
-        <div className='card-interests'>
-            <h1>Interests</h1>
-            Smiling for pictures!
-        </div>
-    );
+export default function Interests({ interests }) {
+  return (
+    <section className='card-interests'>
+      <h3>Interests</h3>
+      <p>{interests}</p>
+    </section>
+  )
 }

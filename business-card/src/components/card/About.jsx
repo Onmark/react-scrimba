@@ -1,10 +1,9 @@
 
-export default function About() {
-
-    return (
-        <div className='card-about'>
-            <h1>About</h1>
-            This is me. You might be wondering how I got into this situation.
-        </div>
-    );
+export default function About({ about }) {
+  return (
+    <section className='card-about'>
+      <h3>About</h3>
+      <p>{about}</p>
+    </section>
+  )
 }

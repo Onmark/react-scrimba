@@ -12,7 +12,19 @@ body {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     background: rgb(40, 42, 45);
+
+    display: flex;
+    flex-direction: column;
 }
+
+.cards-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
 
 .card header {
     text-align: center;
@@ -91,6 +103,7 @@ body {
     font-size: 0.7rem;
     padding: 2px 20px;
     line-height: 1.5;
+    min-height: 120px;
 }
 
 .card-about h1 {
@@ -102,7 +115,7 @@ body {
     font-size: 0.7rem;
     padding: 2px 20px;
     line-height: 1.5;
-    margin-bottom: 30px
+    min-height: 120px;
 }
 
 .card-interests h1 {
@@ -119,4 +132,6 @@ body {
     padding: 20px;
     font-size: 0.9rem;
     color: white;
+    margin-top: auto;
+
 }
