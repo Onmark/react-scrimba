@@ -1,4 +1,6 @@
 import Card from "./components/Card"
+import PersonForm from "./components/PersonForm"
+
 
 import { useEffect, useState } from "react"
 
@@ -25,10 +27,14 @@ export default function App(){
 
 
   return (
-    <div className="cards-container">
-      {persons.map(person => (
-        <Card key={person.id} person={person} />
-      ))}
-    </div>
+    <>
+        <PersonForm />
+
+        <div className="cards-container">
+          {persons.map(person => (
+            <Card key={person.id} person={person} />
+          ))}
+        </div>
+    </>
   )
 }
