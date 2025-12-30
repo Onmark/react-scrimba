@@ -2,14 +2,14 @@ import { useState } from "react";
 
 
 
-export default function PersonForm(){
+export default function PersonForm({onAddPerson}){
     const [name, setName] = useState("");
     const [title, setTitle] = useState("");
     const [imageUrl, setImageUrl] = useState("");
     const [about, setAbout] = useState("");
     const [interests, setInterests] = useState("");
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
 
         const person = {
@@ -20,27 +20,32 @@ export default function PersonForm(){
             interests
         };
 
-        console.log(person);
-    }
+        onAddPerson(person);
+
+        // vyčištění formuláře
+        setName("");
+        setTitle("");
+        setImageUrl("");
+        setAbout("");
+        setInterests("");
+
+}
 
     return (
         <form className="person-form" onSubmit={handleSubmit}>
             <input
-                type="text"
                 placeholder="Name"
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
             />
 
             <input
-                type="text"
                 placeholder="Title"
                 value={title}
                 onChange={(e)=>setTitle(e.target.value)}
             />
 
             <input
-                type="text"
                 placeholder="ImageUrl"
                 value={imageUrl}
                 onChange={(e)=>setImageUrl(e.target.value)}
